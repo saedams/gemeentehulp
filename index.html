@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemeentehulp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">Gemeentehulp</a>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="hulp.html">Informatie</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Waar zoekt u hulp bij?</h1>
+      <p>
+        Vind eenvoudig informatie over gemeentelijke diensten
+        van Gemeente Amsterdam.
+      </p>
+
+      <label for="search">Zoek een onderwerp:</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Bijvoorbeeld: verhuizen"
+      >
+      <p id="result-count">Kies een onderwerp hieronder.</p>
+    </section>
+
+    <section>
+      <h2>Kies een onderwerp</h2>
+
+      <article class="card" data-keywords="verhuizen verhuizing adres">
+        <h3>Verhuizen doorgeven</h3>
+        <p>Informatie over het doorgeven van uw verhuizing.</p>
+        <a href="hulp.html#verhuizen">Bekijk de informatie</a>
+      </article>
+
+      <article class="card" data-keywords="paspoort id kaart identiteit">
+        <h3>Paspoort of ID-kaart</h3>
+        <p>Informatie over identiteitsdocumenten.</p>
+        <a href="hulp.html#identiteit">Bekijk de informatie</a>
+      </article>
+
+      <article class="card" data-keywords="geld kosten bijstand inkomen">
+        <h3>Hulp bij extra kosten</h3>
+        <p>Informatie over bijzondere bijstand.</p>
+        <a href="hulp.html#geld">Bekijk de informatie</a>
+      </article>
+
+      <p id="no-results" hidden>
+        Geen onderwerp gevonden. Probeer een ander woord.
+      </p>
+    </section>
+
+    <p>
+      Dit is een schoolprototype en geen officiële website
+      van Gemeente Amsterdam.
+    </p>
+  </main>
+
+  <footer>
+    <p>Gemeentehulp — individueel studieproject</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
